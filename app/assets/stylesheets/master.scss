@@ -12,7 +12,7 @@
   padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
   padding:0;
 }
@@ -54,4 +54,29 @@ body {
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+//.frosty {
+ // background: rgba(0, 0, 0, 0.35);
+//}
+
+.frosty h1 {
+  font-family: 'alex_brushregular', sans-serif;
+  font-weight: 200;
+  font-size: 80px;
+  text-shadow:  rgb(60, 60, 60) 1px 1px;
+  color:  rgb(103, 182, 250);
+}
+
+.frosty h2 {
+  font-family: 'ambleregular', sans-serif;
+  font-weight: 100;
+  text-shadow:  rgb(60, 60, 60) 1px 1px;
+  color:  rgb(154, 203, 245);
+}
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
