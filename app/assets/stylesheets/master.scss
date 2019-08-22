@@ -18,16 +18,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: image_url('swirl.png');
+  background: image_url('lyonnette.png');
 }
 .navbar {
-  // background: image_url('morocco.png');
+  background: image_url('blu_stripes.png');
   box-shadow: 0px 2px 3px #909395;
-  
+  margin-bottom: 0;
 }
 
 .navbar-light .navbar-brand {
-  color: #245A8A;
+  color: rgb(11, 53, 90);
   font-family: 'alex_brushregular', sans-serif;
   font-size: 30px;
+}
+
+.carousel-caption {
+  color: rgb(154, 203, 245);
+  font-family: 'ambleregular', sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 700px;
+  width: 100%;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
