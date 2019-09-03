@@ -29,6 +29,21 @@
               <a class="nav-link" href="#">Team</a>
             </li>
           </ul>
+          <ul class="navbar-nav">
+            <% if user_signed_in? %>
+               <li class="nav-item">
+                 <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+              </li>
+          <% else %>
+              <li class="nav-item">
+                 <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
+              </li>
+              <li class="nav-item">
+                 <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
+              </li>
+          <% end %>
+        </ul>
+
         </div>
       </nav>
   </nav>
@@ -45,9 +60,9 @@
   </div>
   <div id="footer">
     <div class="container">
-      <b>Info</b>
+      <b>Teachers Area</b>
       <br />
-      <%= link_to 'Contact', '#' %>
+      <%= link_to '--Teach A Course', new_instructor_course_path %>
     </div>
   </div>
 
